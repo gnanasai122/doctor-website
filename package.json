@@ -1,0 +1,14 @@
+{
+  "name": "meditrack",
+  "private": true,
+  "version": "1.0.0",
+  "description": "MediTrack monorepo runner",
+  "scripts": {
+    "dev": "node scripts/run-dev.js",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "start": "npm run start --prefix backend",
+    "build": "npm run build --prefix frontend",
+    "install:all": "npm install --prefix backend && npm install --prefix frontend"
+  }
+}
